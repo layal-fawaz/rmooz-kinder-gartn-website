@@ -214,7 +214,7 @@ textarea {
 
 /*-----------------------------------------sections section------------------------*/
 #sections {
-    margin: 5rem;
+    margin: 7rem;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
