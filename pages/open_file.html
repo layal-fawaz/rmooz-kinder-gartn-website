@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rmmoz</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+ 
+
+    <header id="header">
+        <nav>
+            <ul>
+                <li class="open_menu">
+                    <a href="../index.html">الرئيسية</a>
+                    <ul class="sec_menu">
+                        <li><a href="../index.html#sections">لوحة التحكم</a></li>
+                        <li><a href="registration.html">تسجيل موظف</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="open_menu"><a href="about_rmooz.html">عن رموز</a>
+                    <ul class="sec_menu">
+                        <li><a href="about_rmooz.html#about">الهدف والرسالة</a></li>
+                        <li><a href="about_rmooz.html#corners">زوايا الروضة</a></li>
+                        <li><a href="about_rmooz.html#method">المنهجية</a></li>
+                    </ul>
+                </li>
+
+                <li class="open_menu"><a href="open_file.html">فتح ملف جديد</a>
+                    <ul class="sec_menu">
+                        <li><a href="open_file.html">بيانات الطفل</a></li>
+                        <li><a href="contact.html">بيانات التسجيل ومعلومات التواصل</a></li>
+                        <li><a href="behavior.html">السلوك والانشطة</a></li>
+                        <li><a href="prog.html">أداء الطفل</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact_wit_us.html">تواصل معنا</a></li>
+            </ul>
+            <img src="../assets/images/1.1.jpg">
+        </nav>
+    </header>
+<!---------------------------------------------------------------------------------------->
+
+    <section id="hero">
+        <ul>
+            <li><a href="open_file.html">بيانات الطفل</a></li>
+            <li><a href="contact.html">بيانات التسجيل ومعلومات التواصل</a></li>
+            <li><a href="behavior.html">السلوك والانشطة</a></li>
+            <li><a href="prog.html">أداء الطفل</a></li>
+        </ul>
+
+
+        <div class="child_info">
+            <form action="">
+                <div>
+                    <label for="child_name">اسم الطفل *</label>
+                    <input type="text" placeholder="أدخل اسم الطفل" id="child_name" name="child_name" required>
+                </div>
+
+                <div>
+                    <label for="id">رقم الهوية *</label>
+                    <input type="text" placeholder="أدخل رقم الهوية" id="id" name="id" required>
+                </div>
+
+                <div>
+                    <label for="date_of_birth">تاريخ الميلاد</label>
+                    <input type="date" id="date_of_birth" name="date_of_birth" required>
+                </div>
+
+                <div>
+                    <label for="gender">الجنس *</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">اختر الجنس</option>
+                        <option value="أنثى">أنثى</option>
+                        <option value="ذكر">ذكر</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="born_place">مكان الولادة</label>
+                    <select id="born_place" name="born_place">
+                        <option value="">اختر مكان الولادة</option>
+                        <option value="غزة">غزة</option>
+                        <option value="الضفة الغربية">الضفة الغربية</option>
+                        <option value="القدس">القدس</option>
+                        <option value="رفح">رفح</option>
+                        <option value="خان يونس">خان يونس</option>
+                        <option value="النصيرات">النصيرات</option>
+                        <option value="جباليا">جباليا</option>
+                        <option value="رام الله">رام الله</option>
+                        <option value="نابلس">نابلس</option>
+                        <option value="الخليل">الخليل</option>
+                        <option value="بيت لحم">بيت لحم</option>
+                        <option value="اخرى">أخرى</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="nationality">الجنسية</label>
+                    <select id="nationality" name="nationality">
+                        <option value="">اختر الجنسية</option>
+                        <option value="فلسطينية">فلسطينية</option>
+                        <option value="عراقية">عراقية</option>
+                        <option value="اردنية">أردنية</option>
+                        <option value="مصرية">مصرية</option>
+                        <option value="سورية">سورية</option>
+                        <option value="لبنانية">لبنانية</option>
+                        <option value="سعودية">سعودية</option>
+                        <option value="تركية">تركية</option>
+                        <option value="أمريكية">أمريكية</option>
+                        <option value="بريطانية">بريطانية</option>
+                        <option value="فرنسية">فرنسية</option>
+                        <option value="أخرى">أخرى</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="residence_city">المدينة</label>
+                    <select id="residence_city" name="residence_city">
+                        <option value="">اختر المدينة</option>
+                        <option value="غزة">غزة</option>
+                        <option value="الضفة الغربية">الضفة الغربية</option>
+                        <option value="القدس">القدس</option>
+                        <option value="رام الله">رام الله</option>
+                        <option value="نابلس">نابلس</option>
+                        <option value="الخليل">الخليل</option>
+                        <option value="بيت لحم">بيت لحم</option>
+                        <option value="اخرى">أخرى</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="residence_area">منطقة السكن</label>
+                    <input type="text" placeholder="أدخل اسم المنطقة" id="residence_area" name="residence_area"
+                        required>
+                </div>
+            </form>
+        </div>
+    </section>
+
+   <!------------------------------------------ section------------------------------------>
+
+    <section id="health_info">
+        <h3>بيانات الطفل الصحية</h3>
+        <div class="health">
+            <p>الحالة الصحية</p>
+            <div>
+                <input type="radio" name="status">سليم
+                <input type="radio" name="status">يعاني مرض مزمن
+                <input type="radio" name="status">يعاني من اعاقة
+            </div>
+        </div>
+
+        <div class="health">
+            <select name="" id="">
+                <option value="فصيلة الدم ">فصيلة الدم </option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="AB-">O+</option>
+                <option value="AB-">O-</option>
+            </select>
+        </div>
+
+        <div class="health">
+
+            <select name="" id="">
+                <option value="B+">الحساسية (إن وجدت)</option>
+                <option value="A-">A-</option>
+                <option value="B-">B-</option>
+            </select>
+            
+            <div>
+                <input type="radio" name="status">نعم
+                <input type="radio" name="status">لا
+            </div>
+
+        </div>
+
+        <div class="health">
+            <div>
+                <p>هل لدى الطفل امراض وراثية</p>
+                <textarea name="" id="" placeholder="ادخل اسم المرض"></textarea>
+            </div>
+            <div>
+                <input type="radio" name="status">نعم
+                <input type="radio" name="status">لا
+            </div>
+        </div>
+
+        <div class="health">
+            <div>
+                <p>هل حصل على لقاحات </p>
+                <textarea name="" id="" placeholder="ادخل اسم اللقاح"></textarea>
+            </div>
+            <div>
+                <input type="radio" name="status">نعم
+                <input type="radio" name="status">لا
+            </div>
+        </div>
+
+      <div class="butt">
+        <button type="submit" name="save">حفظ البيانات</button>
+        <button type="reset" name="clear">حذف المدخلات</button>
+      </div>
+
+</section>
+<!------------------------------------------------------------------------------------------>
+<footer>
+    <p> created by layal &copy; 2025 |جميع الحقوق محفوظة </p>
+    <div>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+</footer></body>
+
+</html>
