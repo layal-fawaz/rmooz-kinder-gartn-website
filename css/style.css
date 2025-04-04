@@ -1,0 +1,641 @@
+@font-face {
+    font-family: layal;
+    src: url(../webfonts/TheYearofTheCamel-Regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: layal;
+    font-size: 1.2rem;
+}
+
+:root {
+    --main_color: rgb(174, 23, 169);
+    --sec_color: rgb(251, 233, 249);
+    --third_color: #8e8686;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    /* color: rgb(44, 112, 128); */
+    text-align: center;
+    color: #7e7d7d;
+}
+
+:where(h3, h4, h5) {
+    margin: 1.5rem 0 .5rem;
+}
+
+h3,
+h4 {
+    color: var(--main_color);
+}
+
+ul li {
+    list-style: none;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+button {
+    border: none;
+    background-color: var(--main_color);
+    color: #fff;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--sec_color);
+    color: var(--main_color);
+}
+
+form input,
+select,
+textarea {
+    display: block;
+    outline: none;
+}
+
+/*------------------------------------------header section-----------------------------------------*/
+
+#header nav,
+#header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    a {
+        color: var(--main_color);
+        font-weight: bold;
+    }
+}
+
+#header nav img {
+    width: 200px;
+}
+
+
+
+#header nav .sec_menu {
+    display: none;
+    position: absolute;
+    background: #fffbfe;
+    border: 1px solid #ccc;
+    padding: .3rem;
+    list-style: none;
+    width: 110px;
+    font-size: medium;
+
+    a {
+        color: var(--third_color);
+
+    }
+}
+
+.sec_menu li {
+    padding: 5px;
+}
+
+.open_menu {
+    position: relative;
+}
+
+#header nav .open_menu:hover .sec_menu {
+    display: block;
+    z-index: 100;
+
+    a {
+        font-size: 1rem;
+    }
+}
+
+#header {
+    position: relative;
+}
+
+/* زر الهامبرغر */
+.mobile-menu-btn {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--main_color);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 1000;
+}
+
+/* القائمة الرئيسية */
+#header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.main-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+/* القوائم الفرعية */
+.sec_menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/*-----------------------index page--------------------*/
+/*--------------------------------------------header section---------------------------------------*/
+.main_header video {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.main_header nav {
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+
+    a {
+        color: #fff;
+    }
+}
+
+.main_header h1 {
+    position: absolute;
+    top: 30%;
+    color: #be38c8;
+    padding: 5rem;
+    border-radius: 4px;
+    margin: auto 15rem;
+    font-size: 2rem;
+    background-color: #ede8f8;
+}
+
+.main_header {
+    position: relative;
+}
+
+.main_header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 99%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, .6);
+}
+
+/*-----------------------------------------sections section------------------------*/
+#sections {
+    margin: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#sections div {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+#sections div:hover {
+    scale: 1.2;
+}
+
+#sections a:first-child div {
+    background-color: rgb(172, 86, 180);
+}
+
+#sections a:nth-child(2) div {
+    background-color: rgb(156, 248, 120);
+}
+
+#sections a:nth-child(3) div {
+    background-color: rgb(117, 210, 215);
+}
+
+#sections a:last-child div {
+    background-color: rgb(218, 231, 25);
+}
+
+/*-----------------------------------------mess section------------------------*/
+#mess {
+    margin: 7rem;
+    text-align: center;
+
+    h3 {
+        color: rgb(42, 102, 66);
+    }
+}
+
+
+
+/*-----------------------open_file page--------------------*/
+/*------------------------------------------hero section-----------------------------------------*/
+#hero {
+    margin: 2rem;
+
+    a {
+        color: #fff;
+    }
+}
+
+#hero ul {
+    display: flex;
+    background-color: var(--main_color);
+    padding: 1rem;
+    margin: 0 5rem;
+}
+
+#hero ul li {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#hero ul li:hover {
+    background-color: rgb(216, 86, 212);
+}
+
+#hero .child_info form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 3rem 5rem;
+    background-color: var(--sec_color);
+    padding: 4rem;
+}
+
+#hero .child_info form input,
+select,
+#register form input,
+textarea {
+    margin: 1rem 0 2rem;
+    padding: .5rem 1rem;
+    width: 80%;
+}
+
+
+/*-------------------------------------------- health_info section---------------------------------*/
+
+#health_info {
+    margin: 5rem;
+    box-shadow: 1px 0 1px;
+    padding: 2rem;
+}
+
+#health_info .health {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    border: 1px dashed;
+    padding: 1rem;
+}
+
+#health_info .health div input {
+    margin: 1rem;
+}
+
+#health_info select {
+    width: 20%;
+}
+
+#health_info textarea {
+    width: 15rem;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.butt {
+    margin-right: 25rem;
+}
+
+/*-----------------------about page--------------------*/
+/*------------------------------------------about section-----------------------------------------*/
+.first {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 30rem;
+}
+
+.about_us {
+    height: 90vh;
+    width: 100%;
+    filter: blur(3px);
+}
+
+:where(#about, #corners, #method) {
+    margin: 3rem 5rem;
+}
+
+/*------------------------------------services section----------------------------------------------*/
+#services {
+    display: flex;
+    margin: 8rem;
+    text-align: center;
+}
+
+#services div {
+    width: 20rem;
+    background-color: var(--main_color);
+    padding: 5rem;
+    color: #fff;
+}
+
+#services a:nth-child(2) div,
+#services div:hover {
+    transform: scale(1.2);
+    background-color: var(--sec_color);
+    color: rgb(79, 78, 78);
+}
+
+#services a:nth-child(2) div:hover {
+    transform: scale(1);
+}
+
+/*-----------------------regisration page--------------------*/
+/*----------------------------------------------------------------------------------------*/
+
+.register_body {
+    background-image: url(../assets/images/a.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#register {
+    padding: 5rem;
+}
+
+#register form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 2rem 5rem;
+    box-shadow: 1px 1px 1px 1px;
+
+    padding: 5rem;
+    border-radius: 10px;
+
+    button {
+        margin-right: 18rem;
+        width: 40%;
+    }
+}
+
+#register form input:last-child {
+    border: 1px solid;
+}
+
+
+/*-----------------------progress page--------------------*/
+/*-----------------------------------------------------------------------------------*/
+.main_prog {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    margin: 5rem;
+    background-color: #f4ecf4;
+}
+
+/*--------------------------------------tabel section------------------------*/
+.tabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+td,
+th {
+    padding: .7rem;
+}
+
+table thead tr:first-child {
+    background-color: #bd8dc1 !important;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #e9f0de;
+}
+
+/*-----------------------------------------progress section------------------------*/
+
+#progress {
+    margin: 5rem;
+}
+
+#progress .pro {
+    background-color: #a5a0a5;
+    height: 1rem;
+    border-radius: 15px;
+    margin: .5rem 0 2rem;
+}
+
+#progress {
+    width: 80%;
+}
+
+.pro:nth-child(2) div {
+    width: 30%;
+    height: 100%;
+    background-color: #ff4d4d;
+}
+
+.pro:nth-child(4) div {
+    width: 50%;
+    height: 100%;
+    background-color: #ffcc00;
+}
+
+.pro:nth-child(6) div {
+    width: 70%;
+    height: 100%;
+    background-color: #66cc66;
+}
+
+.pro:nth-child(8) div {
+    width: 90%;
+    height: 100%;
+    background-color: #3399ff;
+}
+
+.color-box {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 2rem;
+    border-radius: 4px;
+}
+
+.excellent {
+    background-color: blue;
+}
+
+.very-good {
+    background-color: green;
+}
+
+.medium {
+    background-color: yellow;
+}
+
+.needs-support {
+    background-color: orange;
+}
+
+.weak {
+    background-color: red;
+}
+
+
+
+/*-----------------------contact_us page--------------------*/
+/*----------------------------------------------------------------------------------------*/
+
+#map h4 {
+    margin-right: 4rem;
+}
+
+iframe {
+    width: 80%;
+    margin: 5rem;
+}
+
+
+#contact_us {
+    display: flex;
+    margin: 5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .send {
+        width: 50%;
+
+        h3 {
+            color: var(--third_color);
+        }
+
+        button {
+            margin-right: 1rem;
+        }
+    }
+
+
+}
+
+#contact_us form input,
+textarea {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 10px;
+    background-color: rgb(238, 226, 238);
+    border: 1px solid rgb(238, 226, 238);
+}
+
+#contact_us .information {
+    p {
+        margin: 1rem 0;
+    }
+
+    div {
+        margin-bottom: 4rem;
+    }
+
+    a {
+        color: #000;
+    }
+}
+
+
+/*-----------------------behavior page--------------------*/
+/*----------------------------------------------------------------------------------------*/
+#behavior_info,
+#educational_info {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    padding: 3rem 5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.health {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.health input[type="radio"],
+.health input[type="checkbox"] {
+    margin-right: 2rem;
+}
+
+#behavior_info .health-inputs {
+    width: 50%;
+}
+
+#educational_info .health-inputs {
+    width: 30%;
+}
+
+
+
+/*-----------------------------------------------footer-----------------------------------------*/
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--third_color);
+}
+
+footer a i {
+    padding: .3rem;
+    color: #fff;
+}
+
+footer a i:hover {
+    scale: 1.5;
+    color: var(--main_color);
+}
